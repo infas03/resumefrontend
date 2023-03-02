@@ -19,7 +19,7 @@ const CompetenciesEdit = () => {
   useEffect(() => {
     getData();
     async function getData() {
-      const response = await fetch(`http://localhost:8080/api/info/view/${user.email}`);
+      const response = await fetch(`http://resume-builder-backend-aa75.onrender.com/api/info/view/${user.email}`);
       const data = await response.json();
       setInform(data[0].competencies);
     }
@@ -35,7 +35,7 @@ const CompetenciesEdit = () => {
 
     var config = {
       method: 'put',
-      url: `http://localhost:8080/api/info/update/${user.email}`,
+      url: `http://resume-builder-backend-aa75.onrender.com/api/info/update/${user.email}`,
       headers: { 
         'Content-Type': 'application/json'
       },

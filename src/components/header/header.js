@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "@mui/material";
 import { Typography } from "@mui/material";
 import { Toolbar } from "@mui/material";
@@ -12,7 +12,7 @@ const Header = () => {
     window.localStorage.setItem('data', JSON.stringify({email: '', result: false}));
     window.location.href='/login'
   }
-  console.log(window.location.href != "http://localhost:3000/");
+  console.log(window.location.href != "http://resume-builder-backend-aa75.onrender.com/");
   return (
     <Toolbar
       sx={{
@@ -33,7 +33,7 @@ const Header = () => {
         HMI Resume Builder
       </Typography>
 
-      {window.location.href === "http://localhost:3000/" || window.location.href === "http://localhost:3000/login" ? (
+      {window.location.href === "http://resume-builder-backend-aa75.onrender.com/" || window.location.href === "http://resume-builder-backend-aa75.onrender.com/login" ? (
         <Box style={{ justifyContent: "end", display: "flex" }}>
           {/* <Button variant="outlined" sx={{ width: 120 }}>
             Sign in

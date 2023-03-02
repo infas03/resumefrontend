@@ -35,7 +35,7 @@ const CompetenciesSetup = () => {
 
     var config = {
       method: 'put',
-      url: `http://localhost:8080/api/info/update/${user.email}`,
+      url: `http://resume-builder-backend-aa75.onrender.com/api/info/update/${user.email}`,
       headers: { 
         'Content-Type': 'application/json'
       },
