@@ -38,7 +38,7 @@ const SignUp = () => {
 
     var config = {
       method: "post",
-      url: "http://resume-builder-backend-aa75.onrender.com/api/user/create",
+      url: "https://resume-builder-backend-aa75.onrender.com/api/user/create",
       headers: {
         "Content-Type": "application/json",
       },

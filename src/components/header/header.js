@@ -12,7 +12,7 @@ const Header = () => {
     window.localStorage.setItem('data', JSON.stringify({email: '', result: false}));
     window.location.href='/login'
   }
-  console.log(window.location.href != "http://resume-builder-backend-aa75.onrender.com/");
+  console.log(window.location.href != "https://resume-builder-backend-aa75.onrender.com/");
   return (
     <Toolbar
       sx={{
@@ -33,7 +33,7 @@ const Header = () => {
         HMI Resume Builder
       </Typography>
 
-      {window.location.href === "http://resume-builder-backend-aa75.onrender.com/" || window.location.href === "http://resume-builder-backend-aa75.onrender.com/login" ? (
+      {window.location.href === "https://resume-builder-backend-aa75.onrender.com/" || window.location.href === "https://resume-builder-backend-aa75.onrender.com/login" ? (
         <Box style={{ justifyContent: "end", display: "flex" }}>
           {/* <Button variant="outlined" sx={{ width: 120 }}>
             Sign in

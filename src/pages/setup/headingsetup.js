@@ -34,7 +34,7 @@ const HeadingSetup = () => {
     
     var config = {
       method: 'post',
-      url: 'http://resume-builder-backend-aa75.onrender.com/api/info/create',
+      url: 'https://resume-builder-backend-aa75.onrender.com/api/info/create',
       headers: { 
         'Content-Type': 'application/json'
       },

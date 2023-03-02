@@ -18,7 +18,7 @@ const SkillsSetup = () => {
   useEffect(() => {
     getData();
     async function getData() {
-      const response = await fetch(`http://resume-builder-backend-aa75.onrender.com/api/info/view/${user.email}`);
+      const response = await fetch(`https://resume-builder-backend-aa75.onrender.com/api/info/view/${user.email}`);
       const data = await response.json();
       setInform(data[0].skills);
     }
@@ -34,7 +34,7 @@ const SkillsSetup = () => {
 
     var config = {
       method: 'put',
-      url: `http://resume-builder-backend-aa75.onrender.com/api/info/update/${user.email}`,
+      url: `https://resume-builder-backend-aa75.onrender.com/api/info/update/${user.email}`,
       headers: { 
         'Content-Type': 'application/json'
       },

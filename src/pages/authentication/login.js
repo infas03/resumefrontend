@@ -39,7 +39,7 @@ const Login = () => {
 
     var config = {
       method: "post",
-      url: "http://resume-builder-backend-aa75.onrender.com/api/user/login",
+      url: "https://resume-builder-backend-aa75.onrender.com/api/user/login",
       headers: {
         "Content-Type": "application/json",
       },

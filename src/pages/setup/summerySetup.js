@@ -17,7 +17,7 @@ const SummerySetup = () => {
   useEffect(() => {
     getData();
     async function getData() {
-      const response = await fetch(`http://resume-builder-backend-aa75.onrender.com/api/info/view/${user.email}`);
+      const response = await fetch(`https://resume-builder-backend-aa75.onrender.com/api/info/view/${user.email}`);
       const data = await response.json();
       setInform(data[0]);
     }
@@ -31,7 +31,7 @@ const SummerySetup = () => {
 
     var config = {
       method: 'put',
-      url: `http://localhost:8080/api/info/update/${user.email}`,
+      url: `https://localhost:8080/api/info/update/${user.email}`,
       headers: { 
         'Content-Type': 'application/json'
       },
